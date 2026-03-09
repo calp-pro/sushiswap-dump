@@ -6,25 +6,25 @@ Static set of addresses (SushiSwap Ethereum mainnet).<br>
 New pairs updates happen every hour at GitHub Action [update.yml](https://github.com/calp-pro/uniswap-v2-dump/actions/workflows/update.yml)<br>
 via [uniswap-v2-loader](https://github.com/calp-pro/uniswap-v2-loader)
 
-Data: `dump.csv` 64Mb+ 
+Data: `dump.csv` 209Kb+ 
 
 CSV schema: `id,pair,token0,token1`
 
 ## Example:
 ```
 ...
-
+1,0x06da0fd433c1a5d7a4faa01111c044910a184553,0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2,0xdac17f958d2ee523a2206206994597c13d831ec7
 ...
 ```
 where:
 - ``
-  * pair/pool index at factory contract
+  * 1 pair/pool index at factory contract
 - ``
-  * / AMM [contract](https://etherscan.io/address/) address
+  * USDT/WETH AMM [contract](https://etherscan.io/address/0x06da0fd433c1a5d7a4faa01111c044910a184553) address
 - ``
-  *  ERC-20 token [contract](https://etherscan.io/token/) address
+  * WETH ERC-20 token [contract](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) address
 - ``
-  *  ERC-20 token [contract](https://etherscan.io/token/) address
+  * USDT ERC-20 token [contract](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) address
 
 ## API
 Same implementation as other Uniswap v2 based protocols.<br>
@@ -34,5 +34,5 @@ Predefined `filename` with value `dump.csv`.
 ## Usage CLI/API:
 ```bash
 > node -e "require('sushiswap-dump').load().then(pairs => console.log(pairs.length))"
-> 
+> 4557
 ```
