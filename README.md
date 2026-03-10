@@ -17,13 +17,13 @@ CSV schema: `id,pair,token0,token1`
 ...
 ```
 where:
-- ``
-  * 1 pair/pool index at factory contract
-- ``
+- `1`
+  * pair/pool index at factory contract
+- `0x06da0fd433c1a5d7a4faa01111c044910a184553`
   * USDT/WETH AMM [contract](https://etherscan.io/address/0x06da0fd433c1a5d7a4faa01111c044910a184553) address
-- ``
+- `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2`
   * WETH ERC-20 token [contract](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) address
-- ``
+- `0xdac17f958d2ee523a2206206994597c13d831ec7`
   * USDT ERC-20 token [contract](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) address
 
 ## API
