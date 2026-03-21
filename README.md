@@ -3,12 +3,14 @@
 <br>
 
 Static set of addresses (SushiSwap Ethereum mainnet).<br>
-New pairs updates happen every hour at GitHub Action [update.yml](https://github.com/calp-pro/uniswap-v2-dump/actions/workflows/update.yml)<br>
+New pairs updates happen **every hour** at GitHub Action [update.yml](https://github.com/calp-pro/uniswap-v2-dump/actions/workflows/update.yml)<br>
 via [uniswap-v2-loader](https://github.com/calp-pro/uniswap-v2-loader)
 
-Data: `dump.csv` 209Kb+ 
+Data:
+- `dump_pairs.bin` 10 Mb+ 
+- `dump_tokens.bin` 10 Mb+
+- `dump_p2tt.bin` 3 Mb+
 
-CSV schema: `id,pair,token0,token1`
 
 ## Example:
 ```
@@ -29,7 +31,7 @@ where:
 ## API
 Same implementation as other Uniswap v2 based protocols.<br>
 Base API reference: [uniswap-v2-loader](https://github.com/calp-pro/uniswap-v2-loader?tab=readme-ov-file#api-reference).<br>
-Predefined `filename` with value `dump.csv`.
+Predefined `filename` with value `dump` & `csv: false`.
 
 ## Usage CLI/API:
 ```bash
