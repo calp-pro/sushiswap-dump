@@ -7,16 +7,24 @@ New pairs updates happen **every hour** at GitHub Action [update.yml](https://gi
 via [uniswap-v2-loader](https://github.com/calp-pro/uniswap-v2-loader)
 
 Data:
-- `dump_pairs.bin` 10 Mb+ 
-- `dump_tokens.bin` 10 Mb+
-- `dump_p2tt.bin` 3 Mb+
+- `dump_pairs.bin` 90 Kb+ 
+- `dump_tokens.bin` 76 Kb+
+- `dump_p2tt.bin` 27 Kb+
 
 
-## Example:
-```
-...
-1,0x06da0fd433c1a5d7a4faa01111c044910a184553,0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2,0xdac17f958d2ee523a2206206994597c13d831ec7
-...
+## Output format
+`load` and subscribe` methods return collection of pools/pairs.
+```js
+[
+    ...
+    {
+        id: 1,
+        pair: '0x06da0fd433c1a5d7a4faa01111c044910a184553',
+        token0: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
+        token1: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+    },
+    ...
+]
 ```
 where:
 - `1`
