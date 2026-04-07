@@ -33,8 +33,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run update
+    - name: Update
       run: npm start
+
+    - name: Test
+      run: npm test
 
     - name: Commit and push changes
       id: commit

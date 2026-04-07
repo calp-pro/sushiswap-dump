@@ -1,6 +1,6 @@
 {
   "name": "sushiswap-dump",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Static set of addresses (SushiSwap Ethereum mainnet)",
   "keywords": [
     "SushiSwap",
@@ -19,7 +19,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node -e \"require('./index.js').load({workers: 0})\""
+    "start": "node -e \"require('./index.js').load({workers: 0})\"",
+    "test": "node --test test.js"
   },
   "dependencies": {
     "uniswap-v2-loader": "6.1.*"
