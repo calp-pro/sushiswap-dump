@@ -1,6 +1,6 @@
 {
   "name": "sushiswap-dump",
-  "version": "1.0.63",
+  "version": "1.0.64",
   "description": "Static set of addresses (SushiSwap Ethereum mainnet)",
   "keywords": [
     "SushiSwap",
